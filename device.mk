@@ -275,6 +275,10 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-awaken
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCOMMON \
     FrameworkOverlayCOMMON \
@@ -297,6 +301,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/overlay/config-odm.xml:$(TARGET_COPY_OUT_ODM)/overlay/config/config.xml \
     $(LOCAL_PATH)/overlay/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml
+
+PRODUCT_PACKAGES += \
+    NotchBarKiller
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
