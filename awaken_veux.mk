@@ -17,6 +17,7 @@ $(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
