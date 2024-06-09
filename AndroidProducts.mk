@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_veux.mk
+    $(LOCAL_DIR)/droidx_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_veux-user \
-    awaken_veux-userdebug \
-    awaken_veux-eng
+    droidx_veux-user \
+    droidx_veux-userdebug \
+    droidx_veux-eng
